@@ -26,19 +26,26 @@ git clone https://github.com/yourusername/helloserver.git
 cd helloserver
 ```
 
-### 2. Konfigurasi New Relic
+### 2. Pasang Dependency
+Pasang semua dependency yang diperlukan menggunakan perintah berikut:
+```bash
+go get github.com/newrelic/go-agent/v3
+go get github.com/newrelic/go-agent/v3/integrations/logcontext-v2/nrlogrus
+```
+
+### 3. Konfigurasi New Relic
 Buka file `server.go` dan ganti `YOUR_NEW_RELIC_LICENSE_KEY` dengan **License Key** dari akun New Relic Anda:
 ```go
 newrelic.ConfigLicense("YOUR_NEW_RELIC_LICENSE_KEY")
 ```
 
-### 3. Jalankan Server
+### 4. Jalankan Server
 Jalankan aplikasi menggunakan perintah:
 ```bash
 go run server.go
 ```
 
-### 4. Akses Endpoint
+### 5. Akses Endpoint
 Server akan berjalan di `http://localhost:8080`. Gunakan browser atau `curl` untuk mengakses endpoint berikut:
 - **`/`**: Menampilkan pesan sapaan. Contoh:
   ```
