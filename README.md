@@ -22,7 +22,7 @@ HelloServer adalah aplikasi server web sederhana berbasis Go yang terintegrasi d
 ### 1. Clone Repository
 Clone repository ke komputer Anda:
 ```bash
-git clone https://github.com/yourusername/helloserver.git
+git clone https://github.com/avecenabasuni/helloserver.git
 cd helloserver
 ```
 
