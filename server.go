@@ -12,7 +12,7 @@ import (
 	"strings"
 
 	// Import New Relic and Logrus integrations
-	"github.com/newrelic/go-agent/v3"
+	"github.com/newrelic/go-agent/v3/newrelic"
 	"github.com/newrelic/go-agent/v3/integrations/logcontext-v2/nrlogrus"
 	"github.com/sirupsen/logrus"
 )
